@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/memorygame.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script type="text/javascript" src="assets/js/lib/jquery-3.2.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="containerTop">
+      <h1>Memory Game</h1>
+    </div>
+
+    <div id="stripe">
+      <ul id=starList>
+        <span class="star"><i class="fa fa-star"></i> </span>
+        <span class="star"><i class="fa fa-star"></i> </span>
+        <span class="star"><i class="fa fa-star"></i> </span>
+      </ul>
+      <span id="message" class="timer"> <label id="counterTries">0</label>
+      <label id="minutes" >00</label>:<label id="seconds">00</label></span>
+
+      <button id="reset"><i class="fa fa-repeat" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Congratulations!! Game finished!</h2>
+        <p>It took you <span id="finalCounter">0</span> seconds to finish the memory game.</p>
+        <p>YOUR SCORE: </p>
+        <span id="finalStars"><i class="fa fa-star"></i></span>
+        <button id="reset2">Play Again ? <i class="fa fa-repeat" aria-hidden="true"></i><br>
+      </div>
+    </div>
+
+    <div id="memory_board">
+      <div class="cardContainer">
+        <div class="cardFlip unmatched" onclick="flip(this)">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+      </div>
+      <div class="cardContainer">
+        <div class="cardFlip unmatched" onclick="flip(this)">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+      </div>
+      <div class="cardContainer">
+        <div class="cardFlip unmatched" onclick="flip(this)">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+      </div>
+      <div class="cardContainer">
+        <div class="cardFlip unmatched" onclick="flip(this)">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+      </div>
+      <div class="cardContainer">
+        <div class="cardFlip unmatched" onclick="flip(this)">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+      </div>
+      <div class="cardContainer">
+        <div class="cardFlip unmatched" onclick="flip(this)">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+      </div>
+      <div class="cardContainer">
+        <div class="cardFlip unmatched" onclick="flip(this)">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+      </div>
+      <div class="cardContainer">
+        <div class="cardFlip unmatched" onclick="flip(this)">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+      </div>
+      <div class="cardContainer">
+        <div class="cardFlip unmatched" onclick="flip(this)">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+      </div>
+      <div class="cardContainer">
+        <div class="cardFlip unmatched" onclick="flip(this)">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+      </div>
+      <div class="cardContainer">
+        <div class="cardFlip unmatched" onclick="flip(this)">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+      </div>
+      <div class="cardContainer">
+        <div class="cardFlip unmatched" onclick="flip(this)">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="assets/js/memoryGame.js"></script>
+  </body>
+</html>
